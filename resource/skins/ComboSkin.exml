@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ComboSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="200">
+	<e:Group top="0" bottom="0" horizontalCenter="0">
+		<e:Label text="Combo" x="0" scaleX="1" scaleY="1" italic="true" textColor="0xff0000"/>
+		<e:Label id="lb_number" text="1" x="10" scaleX="1" scaleY="1" italic="true" textColor="0xff0000"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>
