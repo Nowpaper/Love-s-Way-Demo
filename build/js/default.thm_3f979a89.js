@@ -274,14 +274,15 @@ generateEUI.paths['resource/skins/BeingSkin.exml'] = window.BeingSkin = (functio
 	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
-		t.x = 21;
+		t.horizontalCenter = 0;
 		t.y = 54;
-		t.layout = this._HorizontalLayout1_i();
+		t.layout = this._VerticalLayout2_i();
 		t.elementsContent = [this._Image3_i(),this.lb_score_i()];
 		return t;
 	};
-	_proto._HorizontalLayout1_i = function () {
-		var t = new eui.HorizontalLayout();
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		t.horizontalAlign = "center";
 		return t;
 	};
 	_proto._Image3_i = function () {
@@ -307,7 +308,6 @@ generateEUI.paths['resource/skins/BeingSkin.exml'] = window.BeingSkin = (functio
 		t.left = 0;
 		t.right = 0;
 		t.top = 0;
-		t.visible = false;
 		t.elementsContent = [this._Rect1_i(),this.gp_over_button_i()];
 		return t;
 	};
@@ -323,8 +323,10 @@ generateEUI.paths['resource/skins/BeingSkin.exml'] = window.BeingSkin = (functio
 	_proto.gp_over_button_i = function () {
 		var t = new eui.Group();
 		this.gp_over_button = t;
-		t.x = 55;
-		t.y = 267;
+		t.horizontalCenter = 0;
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.verticalCenter = 0;
 		t.elementsContent = [this._Image4_i(),this.lb_best_i(),this.btn_replay_i()];
 		return t;
 	};

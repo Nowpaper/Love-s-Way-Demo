@@ -17,16 +17,16 @@
 		</e:Skin>
 		</e:skinName>
 	</e:Button>
-	<e:Group y="54" x="21">
+	<e:Group y="54" horizontalCenter="0">
 		<e:Image source="score_png" x="13" y="14"/>
 		<e:BitmapLabel id="lb_score" x="158" y="13" font="scoreFont_fnt" text="0"/>
 		<e:layout>
-			<e:HorizontalLayout/>
+			<e:VerticalLayout horizontalAlign="center"/>
 		</e:layout>
 	</e:Group>
-	<e:Group id="gp_over" left="0" right="0" top="0" bottom="0" visible="false">
+	<e:Group id="gp_over" left="0" right="0" top="0" bottom="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.3"/>
-		<e:Group id="gp_over_button" x="55" y="267">
+		<e:Group id="gp_over_button" scaleX="0.7" scaleY="0.7" horizontalCenter="0" verticalCenter="0">
 			<e:Image source="overbg_png" x="0" y="0"/>
 			<e:BitmapLabel id="lb_best" font="number_fnt" text="123" y="151" horizontalCenter="0"/>
 			<e:Button id="btn_replay" label="" anchorOffsetY="0" scaleX="1" scaleY="1" anchorOffsetX="0" x="149" y="381">
