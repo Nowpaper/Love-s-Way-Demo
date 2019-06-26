@@ -16,7 +16,6 @@ class Game extends eui.Component {
 		this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onclick_screen, this);
 		// this.btn_start.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onclick_btn_start, this);
 		this.btn_replay.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onclick_btn_replay, this);
-		Sound.getInstance();
 		this.onclick_btn_start(null);
 	}
 	private resetGame() {

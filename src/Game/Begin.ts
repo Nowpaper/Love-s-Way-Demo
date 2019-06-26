@@ -5,6 +5,7 @@ class Begin extends eui.Component{
 		super();
 		this.skinName = "resource/skins/BeingSkin.exml";
 		this.btn_start.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onclick_start,this);
+		Sound.getInstance();
 	}
 	onclick_start(){
 		this.parent.addChild(new Game());
